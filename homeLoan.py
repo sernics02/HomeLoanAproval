@@ -6,5 +6,5 @@ file_path = './homeLoan.csv'
 df = pd.read_csv(file_path)
 
 # Imprimir
-print(df)
+print(df.head())
 
