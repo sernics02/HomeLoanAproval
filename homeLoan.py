@@ -70,15 +70,12 @@ def main():
 
   df.to_csv('homeLoanAproval2.csv', index=False)
   df2 = pd.read_csv('homeLoanAproval2.csv')
-  csvData(df2)
 
-  deleteValues(df2, 'ApplicantIncome', 30000)
-  deleteValues(df2, 'LoanAmount', 500)  
+  df2 = deleteValues(df2, 'ApplicantIncome', 30000)
+  df2 = deleteValues(df2, 'LoanAmount', 500)  
   
   for variable in VARIABLES:
     printHistPlot(df2, variable)
-
-  csvData(df2)
 
 if __name__ == "__main__":
   main()
