@@ -1,0 +1,13 @@
+Leemos los datos
+Identificamos los outliers -> valores atípicos
+Identificamos los valores nulos
+Inferimos los valores nulos que no son importantes
+- Gender
+Vemos la distribución para poder identificar los outliers
+
+Primero eliminamos los valores nulos, pero vimos que no era muy eficiente, por lo que decidimos inferir los valores nulos con la moda
+Al final lo que hicimos fue inferir gender, married, SelfEmployed y Education con la moda
+Y LoanAmount Dependents y LoanAmountTerm con la mediana
+Nos dimos cuenta de que LoanAmountTerm son valores similares, por lo que decidimos inferirlos con la moda también
+
+Decidimos eliminar los valores de LoanAmount mayores de 500 y los valores de ApplicantIncome mayores de 30000

@@ -1,0 +1,1781 @@
+      Loan_ID  Gender Married Dependents     Education SelfEmployed  \
+1    LP001003    Male     Yes          1      Graduate           No   
+2    LP001005    Male     Yes          0      Graduate          Yes   
+3    LP001006    Male     Yes          0  Not Graduate           No   
+4    LP001008    Male      No          0      Graduate           No   
+5    LP001011    Male     Yes          2      Graduate          Yes   
+6    LP001013    Male     Yes          0  Not Graduate           No   
+7    LP001014    Male     Yes         3+      Graduate           No   
+8    LP001018    Male     Yes          2      Graduate           No   
+9    LP001020    Male     Yes          1      Graduate           No   
+10   LP001024    Male     Yes          2      Graduate           No   
+11   LP001027    Male     Yes          2      Graduate          NaN   
+12   LP001028    Male     Yes          2      Graduate           No   
+13   LP001029    Male      No          0      Graduate           No   
+14   LP001030    Male     Yes          2      Graduate           No   
+15   LP001032    Male      No          0      Graduate           No   
+16   LP001034    Male      No          1  Not Graduate           No   
+17   LP001036  Female      No          0      Graduate           No   
+18   LP001038    Male     Yes          0  Not Graduate           No   
+19   LP001041    Male     Yes          0      Graduate          NaN   
+20   LP001043    Male     Yes          0  Not Graduate           No   
+21   LP001046    Male     Yes          1      Graduate           No   
+22   LP001047    Male     Yes          0  Not Graduate           No   
+23   LP001050     NaN     Yes          2  Not Graduate           No   
+24   LP001052    Male     Yes          1      Graduate          NaN   
+25   LP001066    Male     Yes          0      Graduate          Yes   
+26   LP001068    Male     Yes          0      Graduate           No   
+27   LP001073    Male     Yes          2  Not Graduate           No   
+28   LP001086    Male      No          0  Not Graduate           No   
+29   LP001087  Female      No          2      Graduate          NaN   
+30   LP001091    Male     Yes          1      Graduate          NaN   
+31   LP001095    Male      No          0      Graduate           No   
+32   LP001097    Male      No          1      Graduate          Yes   
+33   LP001098    Male     Yes          0      Graduate           No   
+34   LP001100    Male      No         3+      Graduate           No   
+36   LP001109    Male     Yes          0      Graduate           No   
+37   LP001112  Female     Yes          0      Graduate           No   
+38   LP001114    Male      No          0      Graduate           No   
+39   LP001116    Male      No          0  Not Graduate           No   
+40   LP001119    Male      No          0      Graduate           No   
+41   LP001120    Male      No          0      Graduate           No   
+42   LP001123    Male     Yes          0      Graduate           No   
+43   LP001131    Male     Yes          0      Graduate           No   
+44   LP001136    Male     Yes          0  Not Graduate          Yes   
+45   LP001137  Female      No          0      Graduate           No   
+46   LP001138    Male     Yes          1      Graduate           No   
+47   LP001144    Male     Yes          0      Graduate           No   
+48   LP001146  Female     Yes          0      Graduate           No   
+49   LP001151  Female      No          0      Graduate           No   
+50   LP001155  Female     Yes          0  Not Graduate           No   
+51   LP001157  Female      No          0      Graduate           No   
+52   LP001164  Female      No          0      Graduate           No   
+53   LP001179    Male     Yes          2      Graduate           No   
+54   LP001186  Female     Yes          1      Graduate          Yes   
+55   LP001194    Male     Yes          2      Graduate           No   
+56   LP001195    Male     Yes          0      Graduate           No   
+57   LP001197    Male     Yes          0      Graduate           No   
+58   LP001198    Male     Yes          1      Graduate           No   
+59   LP001199    Male     Yes          2  Not Graduate           No   
+60   LP001205    Male     Yes          0      Graduate           No   
+61   LP001206    Male     Yes         3+      Graduate           No   
+62   LP001207    Male     Yes          0  Not Graduate          Yes   
+64   LP001222  Female      No          0      Graduate           No   
+65   LP001225    Male     Yes          0      Graduate           No   
+66   LP001228    Male      No          0  Not Graduate           No   
+67   LP001233    Male     Yes          1      Graduate           No   
+68   LP001238    Male     Yes         3+  Not Graduate          Yes   
+69   LP001241  Female      No          0      Graduate           No   
+70   LP001243    Male     Yes          0      Graduate           No   
+71   LP001245    Male     Yes          2  Not Graduate          Yes   
+72   LP001248    Male      No          0      Graduate           No   
+73   LP001250    Male     Yes         3+  Not Graduate           No   
+74   LP001253    Male     Yes         3+      Graduate          Yes   
+75   LP001255    Male      No          0      Graduate           No   
+76   LP001256    Male      No          0      Graduate           No   
+77   LP001259    Male     Yes          1      Graduate          Yes   
+78   LP001263    Male     Yes         3+      Graduate           No   
+79   LP001264    Male     Yes         3+  Not Graduate          Yes   
+80   LP001265  Female      No          0      Graduate           No   
+82   LP001267  Female     Yes          2      Graduate           No   
+83   LP001273    Male     Yes          0      Graduate           No   
+84   LP001275    Male     Yes          1      Graduate           No   
+85   LP001279    Male      No          0      Graduate           No   
+86   LP001280    Male     Yes          2  Not Graduate           No   
+87   LP001282    Male     Yes          0      Graduate           No   
+88   LP001289    Male      No          0      Graduate           No   
+89   LP001310    Male     Yes          0      Graduate           No   
+90   LP001316    Male     Yes          0      Graduate           No   
+91   LP001318    Male     Yes          2      Graduate           No   
+92   LP001319    Male     Yes          2  Not Graduate           No   
+93   LP001322    Male      No          0      Graduate           No   
+94   LP001325    Male      No          0  Not Graduate           No   
+96   LP001327  Female     Yes          0      Graduate           No   
+97   LP001333    Male     Yes          0      Graduate           No   
+98   LP001334    Male     Yes          0  Not Graduate           No   
+99   LP001343    Male     Yes          0      Graduate           No   
+100  LP001345    Male     Yes          2  Not Graduate           No   
+101  LP001349    Male      No          0      Graduate           No   
+104  LP001357    Male     NaN        NaN      Graduate           No   
+105  LP001367    Male     Yes          1      Graduate           No   
+106  LP001369    Male     Yes          2      Graduate           No   
+107  LP001370    Male      No          0  Not Graduate          NaN   
+108  LP001379    Male     Yes          2      Graduate           No   
+109  LP001384    Male     Yes         3+  Not Graduate           No   
+110  LP001385    Male      No          0      Graduate           No   
+111  LP001387  Female     Yes          0      Graduate          NaN   
+112  LP001391    Male     Yes          0  Not Graduate           No   
+114  LP001398    Male      No          0      Graduate          NaN   
+115  LP001401    Male     Yes          1      Graduate           No   
+116  LP001404  Female     Yes          0      Graduate           No   
+117  LP001405    Male     Yes          1      Graduate           No   
+118  LP001421    Male     Yes          0      Graduate           No   
+119  LP001422  Female      No          0      Graduate           No   
+120  LP001426    Male     Yes        NaN      Graduate           No   
+121  LP001430  Female      No          0      Graduate           No   
+122  LP001431  Female      No          0      Graduate           No   
+123  LP001432    Male     Yes          2      Graduate           No   
+124  LP001439    Male     Yes          0  Not Graduate           No   
+125  LP001443  Female      No          0      Graduate           No   
+126  LP001448     NaN     Yes         3+      Graduate           No   
+128  LP001451    Male     Yes          1      Graduate          Yes   
+129  LP001465    Male     Yes          0      Graduate           No   
+130  LP001469    Male      No          0      Graduate          Yes   
+131  LP001473    Male      No          0      Graduate           No   
+132  LP001478    Male      No          0      Graduate           No   
+133  LP001482    Male     Yes          0      Graduate          Yes   
+134  LP001487    Male      No          0      Graduate           No   
+135  LP001488    Male     Yes         3+      Graduate           No   
+136  LP001489  Female     Yes          0      Graduate           No   
+137  LP001491    Male     Yes          2      Graduate          Yes   
+138  LP001492    Male      No          0      Graduate           No   
+139  LP001493    Male     Yes          2  Not Graduate           No   
+140  LP001497    Male     Yes          2      Graduate           No   
+141  LP001498    Male      No          0      Graduate           No   
+142  LP001504    Male      No          0      Graduate          Yes   
+143  LP001507    Male     Yes          0      Graduate           No   
+144  LP001508    Male     Yes          2      Graduate           No   
+145  LP001514  Female     Yes          0      Graduate           No   
+146  LP001516  Female     Yes          2      Graduate           No   
+147  LP001518    Male     Yes          1      Graduate           No   
+148  LP001519  Female      No          0      Graduate           No   
+149  LP001520    Male     Yes          0      Graduate           No   
+150  LP001528    Male      No          0      Graduate           No   
+151  LP001529    Male     Yes          0      Graduate          Yes   
+152  LP001531    Male      No          0      Graduate           No   
+153  LP001532    Male     Yes          2  Not Graduate           No   
+154  LP001535    Male      No          0      Graduate           No   
+155  LP001536    Male     Yes         3+      Graduate           No   
+156  LP001541    Male     Yes          1      Graduate           No   
+157  LP001543    Male     Yes          1      Graduate           No   
+158  LP001546    Male      No          0      Graduate          NaN   
+159  LP001552    Male     Yes          0      Graduate           No   
+160  LP001560    Male     Yes          0  Not Graduate           No   
+161  LP001562    Male     Yes          0      Graduate           No   
+162  LP001565    Male     Yes          1      Graduate           No   
+163  LP001570    Male     Yes          2      Graduate           No   
+164  LP001572    Male     Yes          0      Graduate           No   
+165  LP001574    Male     Yes          0      Graduate           No   
+166  LP001577  Female     Yes          0      Graduate           No   
+167  LP001578    Male     Yes          0      Graduate           No   
+168  LP001579    Male      No          0      Graduate           No   
+169  LP001580    Male     Yes          2      Graduate           No   
+170  LP001581    Male     Yes          0  Not Graduate          NaN   
+171  LP001585     NaN     Yes         3+      Graduate           No   
+172  LP001586    Male     Yes         3+  Not Graduate           No   
+173  LP001594    Male     Yes          0      Graduate           No   
+174  LP001603    Male     Yes          0  Not Graduate          Yes   
+175  LP001606    Male     Yes          0      Graduate           No   
+176  LP001608    Male     Yes          2      Graduate           No   
+177  LP001610    Male     Yes         3+      Graduate           No   
+178  LP001616    Male     Yes          1      Graduate           No   
+179  LP001630    Male      No          0  Not Graduate           No   
+180  LP001633    Male     Yes          1      Graduate           No   
+181  LP001634    Male      No          0      Graduate           No   
+182  LP001636    Male     Yes          0      Graduate           No   
+183  LP001637    Male     Yes          1      Graduate           No   
+184  LP001639  Female     Yes          0      Graduate           No   
+185  LP001640    Male     Yes          0      Graduate          Yes   
+186  LP001641    Male     Yes          1      Graduate          Yes   
+187  LP001643    Male     Yes          0      Graduate           No   
+188  LP001644     NaN     Yes          0      Graduate          Yes   
+189  LP001647    Male     Yes          0      Graduate           No   
+190  LP001653    Male      No          0  Not Graduate           No   
+191  LP001656    Male      No          0      Graduate           No   
+192  LP001657    Male     Yes          0  Not Graduate           No   
+193  LP001658    Male      No          0      Graduate           No   
+194  LP001664    Male      No          0      Graduate           No   
+195  LP001665    Male     Yes          1      Graduate           No   
+196  LP001666    Male      No          0      Graduate           No   
+197  LP001669  Female      No          0  Not Graduate           No   
+198  LP001671  Female     Yes          0      Graduate           No   
+199  LP001673    Male      No          0      Graduate          Yes   
+200  LP001674    Male     Yes          1  Not Graduate           No   
+201  LP001677    Male      No          2      Graduate           No   
+203  LP001688    Male     Yes          1  Not Graduate           No   
+204  LP001691    Male     Yes          2  Not Graduate           No   
+205  LP001692  Female      No          0  Not Graduate           No   
+206  LP001693  Female      No          0      Graduate           No   
+207  LP001698    Male      No          0  Not Graduate           No   
+208  LP001699    Male      No          0      Graduate           No   
+209  LP001702    Male      No          0      Graduate           No   
+210  LP001708  Female      No          0      Graduate           No   
+211  LP001711    Male     Yes         3+      Graduate           No   
+212  LP001713    Male     Yes          1      Graduate          Yes   
+213  LP001715    Male     Yes         3+  Not Graduate          Yes   
+214  LP001716    Male     Yes          0      Graduate           No   
+215  LP001720    Male     Yes         3+  Not Graduate           No   
+216  LP001722    Male     Yes          0      Graduate           No   
+217  LP001726    Male     Yes          0      Graduate           No   
+218  LP001732    Male     Yes          2      Graduate          NaN   
+219  LP001734  Female     Yes          2      Graduate           No   
+220  LP001736    Male     Yes          0      Graduate           No   
+221  LP001743    Male     Yes          2      Graduate           No   
+222  LP001744    Male      No          0      Graduate           No   
+223  LP001749    Male     Yes          0      Graduate           No   
+224  LP001750    Male     Yes          0      Graduate           No   
+225  LP001751    Male     Yes          0      Graduate           No   
+226  LP001754    Male     Yes        NaN  Not Graduate          Yes   
+227  LP001758    Male     Yes          2      Graduate           No   
+228  LP001760    Male     NaN        NaN      Graduate           No   
+229  LP001761    Male      No          0      Graduate          Yes   
+230  LP001765    Male     Yes          1      Graduate           No   
+231  LP001768    Male     Yes          0      Graduate          NaN   
+232  LP001770    Male      No          0  Not Graduate           No   
+233  LP001776  Female      No          0      Graduate           No   
+234  LP001778    Male     Yes          1      Graduate           No   
+235  LP001784    Male     Yes          1      Graduate           No   
+236  LP001786    Male     Yes          0      Graduate          NaN   
+237  LP001788  Female      No          0      Graduate          Yes   
+238  LP001790  Female      No          1      Graduate           No   
+239  LP001792    Male     Yes          1      Graduate           No   
+240  LP001798    Male     Yes          2      Graduate           No   
+241  LP001800    Male     Yes          1  Not Graduate           No   
+242  LP001806    Male      No          0      Graduate           No   
+243  LP001807    Male     Yes          2      Graduate          Yes   
+244  LP001811    Male     Yes          0  Not Graduate           No   
+245  LP001813    Male      No          0      Graduate          Yes   
+246  LP001814    Male     Yes          2      Graduate           No   
+247  LP001819    Male     Yes          1  Not Graduate           No   
+248  LP001824    Male     Yes          1      Graduate           No   
+249  LP001825    Male     Yes          0      Graduate           No   
+250  LP001835    Male     Yes          0  Not Graduate           No   
+251  LP001836  Female      No          2      Graduate           No   
+252  LP001841    Male      No          0  Not Graduate          Yes   
+253  LP001843    Male     Yes          1  Not Graduate           No   
+254  LP001844    Male      No          0      Graduate          Yes   
+255  LP001846  Female      No         3+      Graduate           No   
+256  LP001849    Male      No          0  Not Graduate           No   
+257  LP001854    Male     Yes         3+      Graduate           No   
+258  LP001859    Male     Yes          0      Graduate           No   
+259  LP001864    Male     Yes         3+  Not Graduate           No   
+260  LP001865    Male     Yes          1      Graduate           No   
+261  LP001868    Male      No          0      Graduate           No   
+262  LP001870  Female      No          1      Graduate           No   
+263  LP001871  Female      No          0      Graduate           No   
+264  LP001872    Male      No          0      Graduate          Yes   
+265  LP001875    Male      No          0      Graduate           No   
+266  LP001877    Male     Yes          2      Graduate           No   
+267  LP001882    Male     Yes         3+      Graduate           No   
+268  LP001883  Female      No          0      Graduate          NaN   
+269  LP001884  Female      No          1      Graduate           No   
+270  LP001888  Female      No          0      Graduate           No   
+271  LP001891    Male     Yes          0      Graduate           No   
+272  LP001892    Male      No          0      Graduate           No   
+273  LP001894    Male     Yes          0      Graduate           No   
+274  LP001896    Male     Yes          2      Graduate           No   
+275  LP001900    Male     Yes          1      Graduate           No   
+276  LP001903    Male     Yes          0      Graduate           No   
+277  LP001904    Male     Yes          0      Graduate           No   
+278  LP001907    Male     Yes          0      Graduate           No   
+279  LP001908  Female     Yes          0  Not Graduate           No   
+280  LP001910    Male      No          1  Not Graduate          Yes   
+281  LP001914    Male     Yes          0      Graduate           No   
+282  LP001915    Male     Yes          2      Graduate           No   
+283  LP001917  Female      No          0      Graduate           No   
+285  LP001924    Male      No          0      Graduate           No   
+286  LP001925  Female      No          0      Graduate          Yes   
+287  LP001926    Male     Yes          0      Graduate           No   
+288  LP001931  Female      No          0      Graduate           No   
+289  LP001935    Male      No          0      Graduate           No   
+290  LP001936    Male     Yes          0      Graduate           No   
+291  LP001938    Male     Yes          2      Graduate           No   
+292  LP001940    Male     Yes          2      Graduate           No   
+293  LP001945  Female      No        NaN      Graduate           No   
+294  LP001947    Male     Yes          0      Graduate           No   
+295  LP001949    Male     Yes         3+      Graduate          NaN   
+296  LP001953    Male     Yes          1      Graduate           No   
+297  LP001954  Female     Yes          1      Graduate           No   
+298  LP001955  Female      No          0      Graduate           No   
+299  LP001963    Male     Yes          1      Graduate           No   
+300  LP001964    Male     Yes          0  Not Graduate           No   
+301  LP001972    Male     Yes        NaN  Not Graduate           No   
+302  LP001974  Female      No          0      Graduate           No   
+303  LP001977    Male     Yes          1      Graduate           No   
+304  LP001978    Male      No          0      Graduate           No   
+306  LP001993  Female      No          0      Graduate           No   
+307  LP001994  Female      No          0      Graduate           No   
+308  LP001996    Male      No          0      Graduate           No   
+309  LP001998    Male     Yes          2  Not Graduate           No   
+310  LP002002  Female      No          0      Graduate           No   
+311  LP002004    Male      No          0  Not Graduate           No   
+312  LP002006  Female      No          0      Graduate           No   
+313  LP002008    Male     Yes          2      Graduate          Yes   
+314  LP002024     NaN     Yes          0      Graduate           No   
+315  LP002031    Male     Yes          1  Not Graduate           No   
+316  LP002035    Male     Yes          2      Graduate           No   
+317  LP002036    Male     Yes          0      Graduate           No   
+318  LP002043  Female      No          1      Graduate           No   
+319  LP002050    Male     Yes          1      Graduate          Yes   
+320  LP002051    Male     Yes          0      Graduate           No   
+321  LP002053    Male     Yes         3+      Graduate           No   
+323  LP002055  Female      No          0      Graduate           No   
+324  LP002065    Male     Yes         3+      Graduate           No   
+325  LP002067    Male     Yes          1      Graduate          Yes   
+326  LP002068    Male      No          0      Graduate           No   
+327  LP002082    Male     Yes          0      Graduate          Yes   
+328  LP002086  Female     Yes          0      Graduate           No   
+329  LP002087  Female      No          0      Graduate           No   
+330  LP002097    Male      No          1      Graduate           No   
+331  LP002098    Male      No          0      Graduate           No   
+332  LP002100    Male      No        NaN      Graduate           No   
+333  LP002101    Male     Yes          0      Graduate          NaN   
+334  LP002103     NaN     Yes          1      Graduate          Yes   
+335  LP002106    Male     Yes        NaN      Graduate          Yes   
+336  LP002110    Male     Yes          1      Graduate          NaN   
+337  LP002112    Male     Yes          2      Graduate          Yes   
+339  LP002114  Female      No          0      Graduate           No   
+340  LP002115    Male     Yes         3+  Not Graduate           No   
+341  LP002116  Female      No          0      Graduate           No   
+342  LP002119    Male     Yes          1  Not Graduate           No   
+343  LP002126    Male     Yes         3+  Not Graduate           No   
+344  LP002128    Male     Yes          2      Graduate          NaN   
+345  LP002129    Male     Yes          0      Graduate           No   
+346  LP002130    Male     Yes        NaN  Not Graduate           No   
+347  LP002131    Male     Yes          2  Not Graduate           No   
+348  LP002137    Male     Yes          0      Graduate           No   
+349  LP002138    Male     Yes          0      Graduate           No   
+350  LP002139    Male     Yes          0      Graduate           No   
+351  LP002140    Male      No          0      Graduate           No   
+352  LP002141    Male     Yes         3+      Graduate           No   
+353  LP002142  Female     Yes          0      Graduate          Yes   
+354  LP002143  Female     Yes          0      Graduate           No   
+355  LP002144  Female      No        NaN      Graduate           No   
+356  LP002149    Male     Yes          2      Graduate           No   
+357  LP002151    Male     Yes          1      Graduate           No   
+358  LP002158    Male     Yes          0  Not Graduate           No   
+359  LP002160    Male     Yes         3+      Graduate           No   
+360  LP002161  Female      No          1      Graduate           No   
+361  LP002170    Male     Yes          2      Graduate           No   
+362  LP002175    Male     Yes          0      Graduate           No   
+363  LP002178    Male     Yes          0      Graduate           No   
+364  LP002180    Male      No          0      Graduate          Yes   
+365  LP002181    Male      No          0  Not Graduate           No   
+366  LP002187    Male      No          0      Graduate           No   
+367  LP002188    Male      No          0      Graduate           No   
+368  LP002190    Male     Yes          1      Graduate           No   
+369  LP002191    Male     Yes          0      Graduate           No   
+370  LP002194  Female      No          0      Graduate          Yes   
+371  LP002197    Male     Yes          2      Graduate           No   
+372  LP002201    Male     Yes          2      Graduate          Yes   
+373  LP002205    Male      No          1      Graduate           No   
+374  LP002209  Female      No          0      Graduate          NaN   
+375  LP002211    Male     Yes          0      Graduate           No   
+376  LP002219    Male     Yes         3+      Graduate           No   
+377  LP002223    Male     Yes          0      Graduate           No   
+378  LP002224    Male      No          0      Graduate           No   
+379  LP002225    Male     Yes          2      Graduate           No   
+380  LP002226    Male     Yes          0      Graduate          NaN   
+381  LP002229    Male      No          0      Graduate           No   
+382  LP002231  Female      No          0      Graduate           No   
+383  LP002234    Male      No          0      Graduate          Yes   
+384  LP002236    Male     Yes          2      Graduate           No   
+385  LP002237    Male      No          1      Graduate          NaN   
+386  LP002239    Male      No          0  Not Graduate           No   
+388  LP002244    Male     Yes          0      Graduate           No   
+389  LP002250    Male     Yes          0      Graduate           No   
+390  LP002255    Male      No         3+      Graduate           No   
+391  LP002262    Male     Yes         3+      Graduate           No   
+392  LP002263    Male     Yes          0      Graduate           No   
+393  LP002265    Male     Yes          2  Not Graduate           No   
+394  LP002266    Male     Yes          2      Graduate           No   
+395  LP002272    Male     Yes          2      Graduate           No   
+396  LP002277  Female      No          0      Graduate           No   
+397  LP002281    Male     Yes          0      Graduate           No   
+398  LP002284    Male      No          0  Not Graduate           No   
+399  LP002287  Female      No          0      Graduate           No   
+400  LP002288    Male     Yes          2  Not Graduate           No   
+401  LP002296    Male      No          0  Not Graduate           No   
+402  LP002297    Male      No          0      Graduate           No   
+403  LP002300  Female      No          0  Not Graduate           No   
+404  LP002301  Female      No          0      Graduate          Yes   
+405  LP002305  Female      No          0      Graduate           No   
+406  LP002308    Male     Yes          0  Not Graduate           No   
+407  LP002314  Female      No          0  Not Graduate           No   
+408  LP002315    Male     Yes          1      Graduate           No   
+409  LP002317    Male     Yes         3+      Graduate           No   
+410  LP002318  Female      No          1  Not Graduate          Yes   
+411  LP002319    Male     Yes          0      Graduate          NaN   
+412  LP002328    Male     Yes          0  Not Graduate           No   
+413  LP002332    Male     Yes          0  Not Graduate           No   
+414  LP002335  Female     Yes          0  Not Graduate           No   
+415  LP002337  Female      No          0      Graduate           No   
+416  LP002341  Female      No          1      Graduate           No   
+417  LP002342    Male     Yes          2      Graduate          Yes   
+418  LP002345    Male     Yes          0      Graduate           No   
+419  LP002347    Male     Yes          0      Graduate           No   
+420  LP002348    Male     Yes          0      Graduate           No   
+421  LP002357  Female      No          0  Not Graduate           No   
+422  LP002361    Male     Yes          0      Graduate           No   
+423  LP002362    Male     Yes          1      Graduate           No   
+424  LP002364    Male     Yes          0      Graduate           No   
+425  LP002366    Male     Yes          0      Graduate           No   
+426  LP002367  Female      No          1  Not Graduate           No   
+427  LP002368    Male     Yes          2      Graduate           No   
+428  LP002369    Male     Yes          0      Graduate           No   
+429  LP002370    Male      No          0  Not Graduate           No   
+430  LP002377  Female      No          1      Graduate          Yes   
+431  LP002379    Male      No          0      Graduate           No   
+432  LP002386    Male      No          0      Graduate          NaN   
+433  LP002387    Male     Yes          0      Graduate           No   
+434  LP002390    Male      No          0      Graduate           No   
+436  LP002398    Male      No          0      Graduate           No   
+438  LP002403    Male      No          0      Graduate          Yes   
+439  LP002407  Female     Yes          0  Not Graduate          Yes   
+440  LP002408    Male      No          0      Graduate           No   
+441  LP002409    Male     Yes          0      Graduate           No   
+442  LP002418    Male      No         3+  Not Graduate           No   
+443  LP002422    Male      No          1      Graduate           No   
+444  LP002424    Male     Yes          0      Graduate           No   
+445  LP002429    Male     Yes          1      Graduate          Yes   
+446  LP002434    Male     Yes          2  Not Graduate           No   
+447  LP002435    Male     Yes          0      Graduate          NaN   
+448  LP002443    Male     Yes          2      Graduate           No   
+449  LP002444    Male      No          1  Not Graduate          Yes   
+450  LP002446    Male     Yes          2  Not Graduate           No   
+451  LP002447    Male     Yes          2  Not Graduate           No   
+452  LP002448    Male     Yes          0      Graduate           No   
+453  LP002449    Male     Yes          0      Graduate           No   
+454  LP002453    Male      No          0      Graduate          Yes   
+455  LP002455    Male     Yes          2      Graduate           No   
+456  LP002459    Male     Yes          0      Graduate           No   
+457  LP002467    Male     Yes          0      Graduate           No   
+458  LP002472    Male      No          2      Graduate           No   
+459  LP002473    Male     Yes          0      Graduate           No   
+460  LP002478     NaN     Yes          0      Graduate          Yes   
+461  LP002484    Male     Yes         3+      Graduate           No   
+462  LP002487    Male     Yes          0      Graduate           No   
+463  LP002489  Female      No          1  Not Graduate          NaN   
+464  LP002493    Male      No          0      Graduate           No   
+465  LP002494    Male      No          0      Graduate           No   
+466  LP002500    Male     Yes         3+  Not Graduate           No   
+467  LP002501     NaN     Yes          0      Graduate           No   
+468  LP002502  Female     Yes          2  Not Graduate          NaN   
+469  LP002505    Male     Yes          0      Graduate           No   
+470  LP002515    Male     Yes          1      Graduate          Yes   
+471  LP002517    Male     Yes          1  Not Graduate           No   
+472  LP002519    Male     Yes         3+      Graduate           No   
+473  LP002522  Female      No          0      Graduate          Yes   
+474  LP002524    Male      No          2      Graduate           No   
+475  LP002527    Male     Yes          2      Graduate          Yes   
+476  LP002529    Male     Yes          2      Graduate           No   
+477  LP002530     NaN     Yes          2      Graduate           No   
+478  LP002531    Male     Yes          1      Graduate          Yes   
+480  LP002534  Female      No          0  Not Graduate           No   
+481  LP002536    Male     Yes         3+  Not Graduate           No   
+482  LP002537    Male     Yes          0      Graduate           No   
+483  LP002541    Male     Yes          0      Graduate           No   
+484  LP002543    Male     Yes          2      Graduate           No   
+485  LP002544    Male     Yes          1  Not Graduate           No   
+486  LP002545    Male      No          2      Graduate           No   
+487  LP002547    Male     Yes          1      Graduate           No   
+488  LP002555    Male     Yes          2      Graduate          Yes   
+489  LP002556    Male      No          0      Graduate           No   
+490  LP002560    Male      No          0  Not Graduate           No   
+491  LP002562    Male     Yes          1  Not Graduate           No   
+492  LP002571    Male      No          0  Not Graduate           No   
+493  LP002582  Female      No          0  Not Graduate          Yes   
+494  LP002585    Male     Yes          0      Graduate           No   
+495  LP002586  Female     Yes          1      Graduate           No   
+496  LP002587    Male     Yes          0  Not Graduate           No   
+497  LP002588    Male     Yes          0      Graduate           No   
+498  LP002600    Male     Yes          1      Graduate          Yes   
+499  LP002602    Male      No          0      Graduate           No   
+500  LP002603  Female      No          0      Graduate           No   
+501  LP002606  Female      No          0      Graduate           No   
+502  LP002615    Male     Yes          2      Graduate           No   
+503  LP002618    Male     Yes          1  Not Graduate           No   
+504  LP002619    Male     Yes          0  Not Graduate           No   
+505  LP002622    Male     Yes          2      Graduate           No   
+506  LP002624    Male     Yes          0      Graduate           No   
+507  LP002625     NaN      No          0      Graduate           No   
+508  LP002626    Male     Yes          0      Graduate          Yes   
+509  LP002634  Female      No          1      Graduate           No   
+510  LP002637    Male      No          0  Not Graduate           No   
+511  LP002640    Male     Yes          1      Graduate           No   
+512  LP002643    Male     Yes          2      Graduate           No   
+513  LP002648    Male     Yes          0      Graduate           No   
+514  LP002652    Male      No          0      Graduate           No   
+515  LP002659    Male     Yes         3+      Graduate           No   
+516  LP002670  Female     Yes          2      Graduate           No   
+517  LP002682    Male     Yes        NaN  Not Graduate           No   
+518  LP002683    Male      No          0      Graduate           No   
+519  LP002684  Female      No          0  Not Graduate           No   
+520  LP002689    Male     Yes          2  Not Graduate           No   
+521  LP002690    Male      No          0      Graduate           No   
+522  LP002692    Male     Yes         3+      Graduate          Yes   
+523  LP002693    Male     Yes          2      Graduate          Yes   
+525  LP002699    Male     Yes          2      Graduate          Yes   
+526  LP002705    Male     Yes          0      Graduate           No   
+527  LP002706    Male     Yes          1  Not Graduate           No   
+528  LP002714    Male      No          1  Not Graduate           No   
+529  LP002716    Male      No          0  Not Graduate           No   
+530  LP002717    Male     Yes          0      Graduate           No   
+531  LP002720    Male     Yes         3+      Graduate           No   
+532  LP002723    Male      No          2      Graduate           No   
+533  LP002729    Male      No          1      Graduate           No   
+534  LP002731  Female      No          0  Not Graduate          Yes   
+535  LP002732    Male      No          0  Not Graduate          NaN   
+536  LP002734    Male     Yes          0      Graduate           No   
+537  LP002738    Male      No          2      Graduate           No   
+538  LP002739    Male     Yes          0  Not Graduate           No   
+539  LP002740    Male     Yes         3+      Graduate           No   
+540  LP002741  Female     Yes          1      Graduate           No   
+541  LP002743  Female      No          0      Graduate           No   
+542  LP002753  Female      No          1      Graduate          NaN   
+543  LP002755    Male     Yes          1  Not Graduate           No   
+544  LP002757  Female     Yes          0  Not Graduate           No   
+545  LP002767    Male     Yes          0      Graduate           No   
+546  LP002768    Male      No          0  Not Graduate           No   
+547  LP002772    Male      No          0      Graduate           No   
+548  LP002776  Female      No          0      Graduate           No   
+549  LP002777    Male     Yes          0      Graduate           No   
+552  LP002785    Male     Yes          1      Graduate           No   
+553  LP002788    Male     Yes          0  Not Graduate           No   
+554  LP002789    Male     Yes          0      Graduate           No   
+555  LP002792    Male     Yes          1      Graduate           No   
+556  LP002794  Female      No          0      Graduate           No   
+557  LP002795    Male     Yes         3+      Graduate          Yes   
+558  LP002798    Male     Yes          0      Graduate           No   
+559  LP002804  Female     Yes          0      Graduate           No   
+560  LP002807    Male     Yes          2  Not Graduate           No   
+561  LP002813  Female     Yes          1      Graduate          Yes   
+562  LP002820    Male     Yes          0      Graduate           No   
+563  LP002821    Male      No          0  Not Graduate          Yes   
+564  LP002832    Male     Yes          2      Graduate           No   
+565  LP002833    Male     Yes          0  Not Graduate           No   
+566  LP002836    Male      No          0      Graduate           No   
+567  LP002837    Male     Yes         3+      Graduate           No   
+568  LP002840  Female      No          0      Graduate           No   
+569  LP002841    Male     Yes          0      Graduate           No   
+570  LP002842    Male     Yes          1      Graduate           No   
+571  LP002847    Male     Yes        NaN      Graduate           No   
+572  LP002855    Male     Yes          2      Graduate           No   
+573  LP002862    Male     Yes          2  Not Graduate           No   
+574  LP002863    Male     Yes         3+      Graduate           No   
+575  LP002868    Male     Yes          2      Graduate           No   
+576  LP002872     NaN     Yes          0      Graduate           No   
+577  LP002874    Male      No          0      Graduate           No   
+578  LP002877    Male     Yes          1      Graduate           No   
+579  LP002888    Male      No          0      Graduate          NaN   
+580  LP002892    Male     Yes          2      Graduate           No   
+581  LP002893    Male      No          0      Graduate           No   
+582  LP002894  Female     Yes          0      Graduate           No   
+583  LP002898    Male     Yes          1      Graduate           No   
+584  LP002911    Male     Yes          1      Graduate           No   
+585  LP002912    Male     Yes          1      Graduate           No   
+586  LP002916    Male     Yes          0      Graduate           No   
+587  LP002917  Female      No          0  Not Graduate           No   
+588  LP002925     NaN      No          0      Graduate           No   
+589  LP002926    Male     Yes          2      Graduate          Yes   
+590  LP002928    Male     Yes          0      Graduate           No   
+591  LP002931    Male     Yes          2      Graduate          Yes   
+592  LP002933     NaN      No         3+      Graduate          Yes   
+593  LP002936    Male     Yes          0      Graduate           No   
+594  LP002938    Male     Yes          0      Graduate          Yes   
+595  LP002940    Male      No          0  Not Graduate           No   
+596  LP002941    Male     Yes          2  Not Graduate          Yes   
+597  LP002943    Male      No        NaN      Graduate           No   
+598  LP002945    Male     Yes          0      Graduate          Yes   
+599  LP002948    Male     Yes          2      Graduate           No   
+600  LP002949  Female      No         3+      Graduate          NaN   
+601  LP002950    Male     Yes          0  Not Graduate          NaN   
+602  LP002953    Male     Yes         3+      Graduate           No   
+603  LP002958    Male      No          0      Graduate           No   
+604  LP002959  Female     Yes          1      Graduate           No   
+606  LP002961    Male     Yes          1      Graduate           No   
+607  LP002964    Male     Yes          2  Not Graduate           No   
+608  LP002974    Male     Yes          0      Graduate           No   
+609  LP002978  Female      No          0      Graduate           No   
+610  LP002979    Male     Yes         3+      Graduate           No   
+611  LP002983    Male     Yes          1      Graduate           No   
+612  LP002984    Male     Yes          2      Graduate           No   
+613  LP002990  Female      No          0      Graduate          Yes   
+
+     ApplicantIncome CoapplicantIncome  LoanAmount  LoanAmountTerm  \
+1               4583              1508       128.0           360.0   
+2               3000                 0        66.0           360.0   
+3               2583              2358       120.0           360.0   
+4               6000                 0       141.0           360.0   
+5               5417              4196       267.0           360.0   
+6               2333              1516        95.0           360.0   
+7               3036              2504       158.0           360.0   
+8               4006              1526       168.0           360.0   
+9              12841             10968       349.0           360.0   
+10              3200               700        70.0           360.0   
+11              2500              1840       109.0           360.0   
+12              3073              8106       200.0           360.0   
+13              1853              2840       114.0           360.0   
+14              1299              1086        17.0           120.0   
+15              4950                 0       125.0           360.0   
+16              3596                 0       100.0           240.0   
+17              3510                 0        76.0           360.0   
+18              4887                 0       133.0           360.0   
+19              2600              3500       115.0             NaN   
+20              7660                 0       104.0           360.0   
+21              5955              5625       315.0           360.0   
+22              2600              1911       116.0           360.0   
+23              3365              1917       112.0           360.0   
+24              3717              2925       151.0           360.0   
+25              9560                 0       191.0           360.0   
+26              2799              2253       122.0           360.0   
+27              4226              1040       110.0           360.0   
+28              1442                 0        35.0           360.0   
+29              3750              2083       120.0           360.0   
+30              4166              3369       201.0           360.0   
+31              3167                 0        74.0           360.0   
+32              4692                 0       106.0           360.0   
+33              3500              1667       114.0           360.0   
+34             12500              3000       320.0           360.0   
+36              1828              1330       100.0             NaN   
+37              3667              1459       144.0           360.0   
+38              4166              7210       184.0           360.0   
+39              3748              1668       110.0           360.0   
+40              3600                 0        80.0           360.0   
+41              1800              1213        47.0           360.0   
+42              2400                 0        75.0           360.0   
+43              3941              2336       134.0           360.0   
+44              4695                 0        96.0             NaN   
+45              3410                 0        88.0             NaN   
+46              5649                 0        44.0           360.0   
+47              5821                 0       144.0           360.0   
+48              2645              3440       120.0           360.0   
+49              4000              2275       144.0           360.0   
+50              1928              1644       100.0           360.0   
+51              3086                 0       120.0           360.0   
+52              4230                 0       112.0           360.0   
+53              4616                 0       134.0           360.0   
+54             11500                 0       286.0           360.0   
+55              2708              1167        97.0           360.0   
+56              2132              1591        96.0           360.0   
+57              3366              2200       135.0           360.0   
+58              8080              2250       180.0           360.0   
+59              3357              2859       144.0           360.0   
+60              2500              3796       120.0           360.0   
+61              3029                 0        99.0           360.0   
+62              2609              3449       165.0           180.0   
+64              4166                 0       116.0           360.0   
+65              5726              4595       258.0           360.0   
+66              3200              2254       126.0           180.0   
+67             10750                 0       312.0           360.0   
+68              7100                 0       125.0            60.0   
+69              4300                 0       136.0           360.0   
+70              3208              3066       172.0           360.0   
+71              1875              1875        97.0           360.0   
+72              3500                 0        81.0           300.0   
+73              4755                 0        95.0             NaN   
+74              5266              1774       187.0           360.0   
+75              3750                 0       113.0           480.0   
+76              3750              4750       176.0           360.0   
+77              1000              3022       110.0           360.0   
+78              3167              4000       180.0           300.0   
+79              3333              2166       130.0           360.0   
+80              3846                 0       111.0           360.0   
+82              1378              1881       167.0           360.0   
+83              6000              2250       265.0           360.0   
+84              3988                 0        50.0           240.0   
+85              2366              2531       136.0           360.0   
+86              3333              2000        99.0           360.0   
+87              2500              2118       104.0           360.0   
+88              8566                 0       210.0           360.0   
+89              5695              4167       175.0           360.0   
+90              2958              2900       131.0           360.0   
+91              6250              5654       188.0           180.0   
+92              3273              1820        81.0           360.0   
+93              4133                 0       122.0           360.0   
+94              3620                 0        25.0           120.0   
+96              2484              2302       137.0           360.0   
+97              1977               997        50.0           360.0   
+98              4188                 0       115.0           180.0   
+99              1759              3541       131.0           360.0   
+100             4288              3263       133.0           180.0   
+101             4843              3806       151.0           360.0   
+104             3816               754       160.0           360.0   
+105             3052              1030       100.0           360.0   
+106            11417              1126       225.0           360.0   
+107             7333                 0       120.0           360.0   
+108             3800              3600       216.0           360.0   
+109             2071               754        94.0           480.0   
+110             5316                 0       136.0           360.0   
+111             2929              2333       139.0           360.0   
+112             3572              4114       152.0             NaN   
+114             5050                 0       118.0           360.0   
+115            14583                 0       185.0           180.0   
+116             3167              2283       154.0           360.0   
+117             2214              1398        85.0           360.0   
+118             5568              2142       175.0           360.0   
+119            10408                 0       259.0           360.0   
+120             5667              2667       180.0           360.0   
+121             4166                 0        44.0           360.0   
+122             2137              8980       137.0           360.0   
+123             2957                 0        81.0           360.0   
+124             4300              2014       194.0           360.0   
+125             3692                 0        93.0           360.0   
+126            23803                 0       370.0           360.0   
+128            10513              3850       160.0           180.0   
+129             6080              2569       182.0           360.0   
+130            20166                 0       650.0           480.0   
+131             2014              1929        74.0           360.0   
+132             2718                 0        70.0           360.0   
+133             3459                 0        25.0           120.0   
+134             4895                 0       102.0           360.0   
+135             4000              7750       290.0           360.0   
+136             4583                 0        84.0           360.0   
+137             3316              3500        88.0           360.0   
+138            14999                 0       242.0           360.0   
+139             4200              1430       129.0           360.0   
+140             5042              2083       185.0           360.0   
+141             5417                 0       168.0           360.0   
+142             6950                 0       175.0           180.0   
+143             2698              2034       122.0           360.0   
+144            11757                 0       187.0           180.0   
+145             2330              4486       100.0           360.0   
+146            14866                 0        70.0           360.0   
+147             1538              1425        30.0           360.0   
+148            10000              1666       225.0           360.0   
+149             4860               830       125.0           360.0   
+150             6277                 0       118.0           360.0   
+151             2577              3750       152.0           360.0   
+152             9166                 0       244.0           360.0   
+153             2281                 0       113.0           360.0   
+154             3254                 0        50.0           360.0   
+155            39999                 0       600.0           180.0   
+156             6000                 0       160.0           360.0   
+157             9538                 0       187.0           360.0   
+158             2980              2083       120.0           360.0   
+159             4583              5625       255.0           360.0   
+160             1863              1041        98.0           360.0   
+161             7933                 0       275.0           360.0   
+162             3089              1280       121.0           360.0   
+163             4167              1447       158.0           360.0   
+164             9323                 0        75.0           180.0   
+165             3707              3166       182.0             NaN   
+166             4583                 0       112.0           360.0   
+167             2439              3333       129.0           360.0   
+168             2237                 0        63.0           480.0   
+169             8000                 0       200.0           360.0   
+170             1820              1769        95.0           360.0   
+171            51763                 0       700.0           300.0   
+172             3522                 0        81.0           180.0   
+173             5708              5625       187.0           360.0   
+174             4344               736        87.0           360.0   
+175             3497              1964       116.0           360.0   
+176             2045              1619       101.0           360.0   
+177             5516             11300       495.0           360.0   
+178             3750                 0       116.0           360.0   
+179             2333              1451       102.0           480.0   
+180             6400              7250       180.0           360.0   
+181             1916              5063        67.0           360.0   
+182             4600                 0        73.0           180.0   
+183            33846                 0       260.0           360.0   
+184             3625                 0       108.0           360.0   
+185            39147              4750       120.0           360.0   
+186             2178                 0        66.0           300.0   
+187             2383              2138        58.0           360.0   
+188              674              5296       168.0           360.0   
+189             9328                 0       188.0           180.0   
+190             4885                 0        48.0           360.0   
+191            12000                 0       164.0           360.0   
+192             6033                 0       160.0           360.0   
+193             3858                 0        76.0           360.0   
+194             4191                 0       120.0           360.0   
+195             3125              2583       170.0           360.0   
+196             8333              3750       187.0           360.0   
+197             1907              2365       120.0             NaN   
+198             3416              2816       113.0           360.0   
+199            11000                 0        83.0           360.0   
+200             2600              2500        90.0           360.0   
+201             4923                 0       166.0           360.0   
+203             3500              1083       135.0           360.0   
+204             3917                 0       124.0           360.0   
+205             4408                 0       120.0           360.0   
+206             3244                 0        80.0           360.0   
+207             3975              2531        55.0           360.0   
+208             2479                 0        59.0           360.0   
+209             3418                 0       127.0           360.0   
+210            10000                 0       214.0           360.0   
+211             3430              1250       128.0           360.0   
+212             7787                 0       240.0           360.0   
+213             5703                 0       130.0           360.0   
+214             3173              3021       137.0           360.0   
+215             3850               983       100.0           360.0   
+216              150              1800       135.0           360.0   
+217             3727              1775       131.0           360.0   
+218             5000                 0        72.0           360.0   
+219             4283              2383       127.0           360.0   
+220             2221                 0        60.0           360.0   
+221             4009              1717       116.0           360.0   
+222             2971              2791       144.0           360.0   
+223             7578              1010       175.0             NaN   
+224             6250                 0       128.0           360.0   
+225             3250                 0       170.0           360.0   
+226             4735                 0       138.0           360.0   
+227             6250              1695       210.0           360.0   
+228             4758                 0       158.0           480.0   
+229             6400                 0       200.0           360.0   
+230             2491              2054       104.0           360.0   
+231             3716                 0        42.0           180.0   
+232             3189              2598       120.0             NaN   
+233             8333                 0       280.0           360.0   
+234             3155              1779       140.0           360.0   
+235             5500              1260       170.0           360.0   
+236             5746                 0       255.0           360.0   
+237             3463                 0       122.0           360.0   
+238             3812                 0       112.0           360.0   
+239             3315                 0        96.0           360.0   
+240             5819              5000       120.0           360.0   
+241             2510              1983       140.0           180.0   
+242             2965              5701       155.0            60.0   
+243             6250              1300       108.0           360.0   
+244             3406              4417       123.0           360.0   
+245             6050              4333       120.0           180.0   
+246             9703                 0       112.0           360.0   
+247             6608                 0       137.0           180.0   
+248             2882              1843       123.0           480.0   
+249             1809              1868        90.0           360.0   
+250             1668              3890       201.0           360.0   
+251             3427                 0       138.0           360.0   
+252             2583              2167       104.0           360.0   
+253             2661              7101       279.0           180.0   
+254            16250                 0       192.0           360.0   
+255             3083                 0       255.0           360.0   
+256             6045                 0       115.0           360.0   
+257             5250                 0        94.0           360.0   
+258            14683              2100       304.0           360.0   
+259             4931                 0       128.0           360.0   
+260             6083              4250       330.0           360.0   
+261             2060              2209       134.0           360.0   
+262             3481                 0       155.0            36.0   
+263             7200                 0       120.0           360.0   
+264             5166                 0       128.0           360.0   
+265             4095              3447       151.0           360.0   
+266             4708              1387       150.0           360.0   
+267             4333              1811       160.0           360.0   
+268             3418                 0       135.0           360.0   
+269             2876              1560        90.0           360.0   
+270             3237                 0        30.0           360.0   
+271            11146                 0       136.0           360.0   
+272             2833              1857       126.0           360.0   
+273             2620              2223       150.0           360.0   
+274             3900                 0        90.0           360.0   
+275             2750              1842       115.0           360.0   
+276             3993              3274       207.0           360.0   
+277             3103              1300        80.0           360.0   
+278            14583                 0       436.0           360.0   
+279             4100                 0       124.0           360.0   
+280             4053              2426       158.0           360.0   
+281             3927               800       112.0           360.0   
+282             2301     9.857.999.878        78.0           180.0   
+283             1811              1666        54.0           360.0   
+285             3158              3053        89.0           360.0   
+286             2600              1717        99.0           300.0   
+287             3704              2000       120.0           360.0   
+288             4124                 0       115.0           360.0   
+289             9508                 0       187.0           360.0   
+290             3075              2416       139.0           360.0   
+291             4400                 0       127.0           360.0   
+292             3153              1560       134.0           360.0   
+293             5417                 0       143.0           480.0   
+294             2383              3334       172.0           360.0   
+295             4416              1250       110.0           360.0   
+296             6875                 0       200.0           360.0   
+297             4666                 0       135.0           360.0   
+298             5000              2541       151.0           480.0   
+299             2014              2925       113.0           360.0   
+300             1800              2934        93.0           360.0   
+301             2875              1750       105.0           360.0   
+302             5000                 0       132.0           360.0   
+303             1625              1803        96.0           360.0   
+304             4000              2500       140.0           360.0   
+306             3762              1666       135.0           360.0   
+307             2400              1863       104.0           360.0   
+308            20233                 0       480.0           360.0   
+309             7667                 0       185.0           360.0   
+310             2917                 0        84.0           360.0   
+311             2927              2405       111.0           360.0   
+312             2507                 0        56.0           360.0   
+313             5746                 0       144.0            84.0   
+314             2473              1843       159.0           360.0   
+315             3399              1640       111.0           180.0   
+316             3717                 0       120.0           360.0   
+317             2058              2134        88.0           360.0   
+318             3541                 0       112.0           360.0   
+319            10000                 0       155.0           360.0   
+320             2400              2167       115.0           360.0   
+321             4342               189       124.0           360.0   
+323             3166              2985       132.0           360.0   
+324            15000                 0       300.0           360.0   
+325             8666              4983       376.0           360.0   
+326             4917                 0       130.0           360.0   
+327             5818              2160       184.0           360.0   
+328             4333              2451       110.0           360.0   
+329             2500                 0        67.0           360.0   
+330             4384              1793       117.0           360.0   
+331             2935                 0        98.0           360.0   
+332             2833                 0        71.0           360.0   
+333            63337                 0       490.0           180.0   
+334             9833              1833       182.0           180.0   
+335             5503              4490        70.0             NaN   
+336             5250               688       160.0           360.0   
+337             2500              4600       176.0           360.0   
+339             4160                 0        71.0           360.0   
+340             2647              1587       173.0           360.0   
+341             2378                 0        46.0           360.0   
+342             4554              1229       158.0           360.0   
+343             3173                 0        74.0           360.0   
+344             2583              2330       125.0           360.0   
+345             2499              2458       160.0           360.0   
+346             3523              3230       152.0           360.0   
+347             3083              2168       126.0           360.0   
+348             6333              4583       259.0           360.0   
+349             2625              6250       187.0           360.0   
+350             9083                 0       228.0           360.0   
+351             8750              4167       308.0           360.0   
+352             2666              2083        95.0           360.0   
+353             5500                 0       105.0           360.0   
+354             2423               505       130.0           360.0   
+355             3813                 0       116.0           180.0   
+356             8333              3167       165.0           360.0   
+357             3875                 0        67.0           360.0   
+358             3000              1666       100.0           480.0   
+359             5167              3167       200.0           360.0   
+360             4723                 0        81.0           360.0   
+361             5000              3667       236.0           360.0   
+362             4750              2333       130.0           360.0   
+363             3013              3033        95.0           300.0   
+364             6822                 0       141.0           360.0   
+365             6216                 0       133.0           360.0   
+366             2500                 0        96.0           480.0   
+367             5124                 0       124.0             NaN   
+368             6325                 0       175.0           360.0   
+369            19730              5266       570.0           360.0   
+370            15759                 0        55.0           360.0   
+371             5185                 0       155.0           360.0   
+372             9323              7873       380.0           300.0   
+373             3062              1987       111.0           180.0   
+374             2764              1459       110.0           360.0   
+375             4817               923       120.0           180.0   
+376             8750              4996       130.0           360.0   
+377             4310                 0       130.0           360.0   
+378             3069                 0        71.0           480.0   
+379             5391                 0       130.0           360.0   
+380             3333              2500       128.0           360.0   
+381             5941              4232       296.0           360.0   
+382             6000                 0       156.0           360.0   
+383             7167                 0       128.0           360.0   
+384             4566                 0       100.0           360.0   
+385             3667                 0       113.0           180.0   
+386             2346              1600       132.0           360.0   
+388             2333              2417       136.0           360.0   
+389             5488                 0       125.0           360.0   
+390             9167                 0       185.0           360.0   
+391             9504                 0       275.0           360.0   
+392             2583              2115       120.0           360.0   
+393             1993              1625       113.0           180.0   
+394             3100              1400       113.0           360.0   
+395             3276               484       135.0           360.0   
+396             3180                 0        71.0           360.0   
+397             3033              1459        95.0           360.0   
+398             3902              1666       109.0           360.0   
+399             1500              1800       103.0           360.0   
+400             2889                 0        45.0           180.0   
+401             2755                 0        65.0           300.0   
+402             2500             20000       103.0           360.0   
+403             1963                 0        53.0           360.0   
+404             7441                 0       194.0           360.0   
+405             4547                 0       115.0           360.0   
+406             2167              2400       115.0           360.0   
+407             2213                 0        66.0           360.0   
+408             8300                 0       152.0           300.0   
+409            81000                 0       360.0           360.0   
+410             3867                 0        62.0           360.0   
+411             6256                 0       160.0           360.0   
+412             6096                 0       218.0           360.0   
+413             2253              2033       110.0           360.0   
+414             2149              3237       178.0           360.0   
+415             2995                 0        60.0           360.0   
+416             2600                 0       160.0           360.0   
+417             1600             20000       239.0           360.0   
+418             1025              2773       112.0           360.0   
+419             3246              1417       138.0           360.0   
+420             5829                 0       138.0           360.0   
+421             2720                 0        80.0             NaN   
+422             1820              1719       100.0           360.0   
+423             7250              1667       110.0             NaN   
+424            14880                 0        96.0           360.0   
+425             2666              4300       121.0           360.0   
+426             4606                 0        81.0           360.0   
+427             5935                 0       133.0           360.0   
+428             2920     1.612.000.084        87.0           360.0   
+429             2717                 0        60.0           180.0   
+430             8624                 0       150.0           360.0   
+431             6500                 0       105.0           360.0   
+432            12876                 0       405.0           360.0   
+433             2425              2340       143.0           360.0   
+434             3750                 0       100.0           360.0   
+436             1926              1851        50.0           360.0   
+438            10416                 0       187.0           360.0   
+439             7142                 0       138.0           360.0   
+440             3660              5064       187.0           360.0   
+441             7901              1833       180.0           360.0   
+442             4707              1993       148.0           360.0   
+443            37719                 0       152.0           360.0   
+444             7333              8333       175.0           300.0   
+445             3466              1210       130.0           360.0   
+446             4652                 0       110.0           360.0   
+447             3539              1376        55.0           360.0   
+448             3340              1710       150.0           360.0   
+449             2769              1542       190.0           360.0   
+450             2309              1255       125.0           360.0   
+451             1958              1456        60.0           300.0   
+452             3948              1733       149.0           360.0   
+453             2483              2466        90.0           180.0   
+454             7085                 0        84.0           360.0   
+455             3859                 0        96.0           360.0   
+456             4301                 0       118.0           360.0   
+457             3708              2569       173.0           360.0   
+458             4354                 0       136.0           360.0   
+459             8334                 0       160.0           360.0   
+460             2083              4083       160.0           360.0   
+461             7740                 0       128.0           180.0   
+462             3015              2188       153.0           360.0   
+463             5191                 0       132.0           360.0   
+464             4166                 0        98.0           360.0   
+465             6000                 0       140.0           360.0   
+466             2947              1664        70.0           180.0   
+467            16692                 0       110.0           360.0   
+468              210              2917        98.0           360.0   
+469             4333              2451       110.0           360.0   
+470             3450              2079       162.0           360.0   
+471             2653              1500       113.0           180.0   
+472             4691                 0       100.0           360.0   
+473             2500                 0        93.0           360.0   
+474             5532              4648       162.0           360.0   
+475            16525              1014       150.0           360.0   
+476             6700              1750       230.0           300.0   
+477             2873              1872       132.0           360.0   
+478            16667              2250        86.0           360.0   
+480             4350                 0       154.0           360.0   
+481             3095                 0       113.0           360.0   
+482             2083              3150       128.0           360.0   
+483            10833                 0       234.0           360.0   
+484             8333                 0       246.0           360.0   
+485             1958              2436       131.0           360.0   
+486             3547                 0        80.0           360.0   
+487            18333                 0       500.0           360.0   
+488             4583              2083       160.0           360.0   
+489             2435                 0        75.0           360.0   
+490             2699              2785        96.0           360.0   
+491             5333              1131       186.0           360.0   
+492             3691                 0       110.0           360.0   
+493            17263                 0       225.0           360.0   
+494             3597              2157       119.0           360.0   
+495             3326               913       105.0            84.0   
+496             2600              1700       107.0           360.0   
+497             4625              2857       111.0            12.0   
+498             2895                 0        95.0           360.0   
+499             6283              4416       209.0           360.0   
+500              645              3683       113.0           480.0   
+501             3159                 0       100.0           360.0   
+502             4865              5624       208.0           360.0   
+503             4050              5302       138.0           360.0   
+504             3814              1483       124.0           300.0   
+505             3510              4416       243.0           360.0   
+506            20833              6667       480.0           360.0   
+507             3583                 0        96.0           360.0   
+508             2479              3013       188.0           360.0   
+509            13262                 0        40.0           360.0   
+510             3598              1287       100.0           360.0   
+511             6065              2004       250.0           360.0   
+512             3283              2035       148.0           360.0   
+513             2130              6666        70.0           180.0   
+514             5815              3666       311.0           360.0   
+515             3466              3428       150.0           360.0   
+516             2031              1632       113.0           480.0   
+517             3074              1800       123.0           360.0   
+518             4683              1915       185.0           360.0   
+519             3400                 0        95.0           360.0   
+520             2192              1742        45.0           360.0   
+521             2500                 0        55.0           360.0   
+522             5677              1424       100.0           360.0   
+523             7948              7166       480.0           360.0   
+525            17500                 0       400.0           360.0   
+526             3775                 0       110.0           360.0   
+527             5285              1430       161.0           360.0   
+528             2679              1302        94.0           360.0   
+529             6783                 0       130.0           360.0   
+530             1025              5500       216.0           360.0   
+531             4281                 0       100.0           360.0   
+532             3588                 0       110.0           360.0   
+533            11250                 0       196.0           360.0   
+534            18165                 0       125.0           360.0   
+535             2550              2042       126.0           360.0   
+536             6133              3906       324.0           360.0   
+537             3617                 0       107.0           360.0   
+538             2917               536        66.0           360.0   
+539             6417                 0       157.0           180.0   
+540             4608              2845       140.0           180.0   
+541             2138                 0        99.0           360.0   
+542             3652                 0        95.0           360.0   
+543             2239              2524       128.0           360.0   
+544             3017               663       102.0           360.0   
+545             2768              1950       155.0           360.0   
+546             3358                 0        80.0            36.0   
+547             2526              1783       145.0           360.0   
+548             5000                 0       103.0           360.0   
+549             2785              2016       110.0           360.0   
+552             3333              3250       158.0           360.0   
+553             2454              2333       181.0           360.0   
+554             3593              4266       132.0           180.0   
+555             5468              1032        26.0           360.0   
+556             2667              1625        84.0           360.0   
+557            10139                 0       260.0           360.0   
+558             3887              2669       162.0           360.0   
+559             4180              2306       182.0           360.0   
+560             3675               242       108.0           360.0   
+561            19484                 0       600.0           360.0   
+562             5923              2054       211.0           360.0   
+563             5800                 0       132.0           360.0   
+564             8799                 0       258.0           360.0   
+565             4467                 0       120.0           360.0   
+566             3333                 0        70.0           360.0   
+567             3400              2500       123.0           360.0   
+568             2378                 0         9.0           360.0   
+569             3166              2064       104.0           360.0   
+570             3417              1750       186.0           360.0   
+571             5116              1451       165.0           360.0   
+572            16666                 0       275.0           360.0   
+573             6125              1625       187.0           480.0   
+574             6406                 0       150.0           360.0   
+575             3159               461       108.0            84.0   
+576             3087              2210       136.0           360.0   
+577             3229              2739       110.0           360.0   
+578             1782              2232       107.0           360.0   
+579             3182              2917       161.0           360.0   
+580             6540                 0       205.0           360.0   
+581             1836             33837        90.0           360.0   
+582             3166                 0        36.0           360.0   
+583             1880                 0        61.0           360.0   
+584             2787              1917       146.0           360.0   
+585             4283              3000       172.0            84.0   
+586             2297              1522       104.0           360.0   
+587             2165                 0        70.0           360.0   
+588             4750                 0        94.0           360.0   
+589             2726                 0       106.0           360.0   
+590             3000              3416        56.0           180.0   
+591             6000                 0       205.0           240.0   
+592             9357                 0       292.0           360.0   
+593             3859              3300       142.0           180.0   
+594            16120                 0       260.0           360.0   
+595             3833                 0       110.0           360.0   
+596             6383              1000       187.0           360.0   
+597             2987                 0        88.0           360.0   
+598             9963                 0       180.0           360.0   
+599             5780                 0       192.0           360.0   
+600              416             41667       350.0           180.0   
+601             2894              2792       155.0           360.0   
+602             5703                 0       128.0           360.0   
+603             3676              4301       172.0           360.0   
+604            12000                 0       496.0           360.0   
+606             3400              2500       173.0           360.0   
+607             3987              1411       157.0           360.0   
+608             3232              1950       108.0           360.0   
+609             2900                 0        71.0           360.0   
+610             4106                 0        40.0           180.0   
+611             8072               240       253.0           360.0   
+612             7583                 0       187.0           360.0   
+613             4583                 0       133.0           360.0   
+
+    PropertyArea LoanStatus  
+1          Rural          N  
+2          Urban          Y  
+3          Urban          Y  
+4          Urban          Y  
+5          Urban          Y  
+6          Urban          Y  
+7      Semiurban          N  
+8          Urban          Y  
+9      Semiurban          N  
+10         Urban          Y  
+11         Urban          Y  
+12         Urban          Y  
+13         Rural          N  
+14         Urban          Y  
+15         Urban          Y  
+16         Urban          Y  
+17         Urban          N  
+18         Rural          N  
+19         Urban          Y  
+20         Urban          N  
+21         Urban          Y  
+22     Semiurban          N  
+23         Rural          N  
+24     Semiurban          N  
+25     Semiurban          Y  
+26     Semiurban          Y  
+27         Urban          Y  
+28         Urban          N  
+29     Semiurban          Y  
+30         Urban          N  
+31         Urban          N  
+32         Rural          N  
+33     Semiurban          Y  
+34         Rural          N  
+36         Urban          N  
+37     Semiurban          Y  
+38         Urban          Y  
+39     Semiurban          Y  
+40         Urban          N  
+41         Urban          Y  
+42         Urban          Y  
+43     Semiurban          Y  
+44         Urban          Y  
+45         Urban          Y  
+46         Urban          Y  
+47         Urban          Y  
+48         Urban          N  
+49     Semiurban          Y  
+50     Semiurban          Y  
+51     Semiurban          Y  
+52     Semiurban          N  
+53         Urban          N  
+54         Urban          N  
+55     Semiurban          Y  
+56     Semiurban          Y  
+57         Rural          N  
+58         Urban          Y  
+59         Urban          Y  
+60         Urban          Y  
+61         Urban          Y  
+62         Rural          N  
+64     Semiurban          N  
+65     Semiurban          N  
+66         Urban          N  
+67         Urban          Y  
+68         Urban          Y  
+69     Semiurban          N  
+70         Urban          Y  
+71     Semiurban          Y  
+72     Semiurban          Y  
+73     Semiurban          N  
+74     Semiurban          Y  
+75         Urban          N  
+76         Urban          N  
+77         Urban          N  
+78     Semiurban          N  
+79     Semiurban          Y  
+80     Semiurban          Y  
+82         Urban          N  
+83     Semiurban          N  
+84         Urban          Y  
+85     Semiurban          Y  
+86     Semiurban          Y  
+87     Semiurban          Y  
+88         Urban          Y  
+89     Semiurban          Y  
+90     Semiurban          Y  
+91     Semiurban          Y  
+92         Urban          Y  
+93     Semiurban          Y  
+94     Semiurban          Y  
+96     Semiurban          Y  
+97     Semiurban          Y  
+98     Semiurban          Y  
+99     Semiurban          Y  
+100        Urban          Y  
+101    Semiurban          Y  
+104        Urban          Y  
+105        Urban          Y  
+106        Urban          Y  
+107        Rural          N  
+108        Urban          N  
+109    Semiurban          Y  
+110        Urban          Y  
+111    Semiurban          Y  
+112        Rural          N  
+114    Semiurban          Y  
+115        Rural          Y  
+116    Semiurban          Y  
+117        Urban          Y  
+118        Rural          N  
+119        Urban          Y  
+120        Rural          Y  
+121    Semiurban          Y  
+122    Semiurban          Y  
+123    Semiurban          Y  
+124        Rural          Y  
+125        Rural          Y  
+126        Rural          Y  
+128        Urban          N  
+129        Rural          N  
+130        Urban          Y  
+131        Urban          Y  
+132    Semiurban          Y  
+133    Semiurban          Y  
+134    Semiurban          Y  
+135    Semiurban          N  
+136        Rural          N  
+137        Urban          Y  
+138    Semiurban          N  
+139        Rural          N  
+140        Rural          N  
+141        Urban          Y  
+142    Semiurban          Y  
+143    Semiurban          Y  
+144        Urban          Y  
+145    Semiurban          Y  
+146        Urban          Y  
+147        Urban          Y  
+148        Rural          N  
+149    Semiurban          Y  
+150        Rural          N  
+151        Rural          Y  
+152        Urban          N  
+153        Rural          N  
+154        Urban          Y  
+155    Semiurban          Y  
+156        Rural          Y  
+157        Urban          Y  
+158        Rural          Y  
+159    Semiurban          Y  
+160    Semiurban          Y  
+161        Urban          N  
+162    Semiurban          N  
+163        Rural          Y  
+164        Urban          Y  
+165        Rural          Y  
+166        Rural          N  
+167        Rural          Y  
+168    Semiurban          N  
+169    Semiurban          Y  
+170        Rural          Y  
+171        Urban          Y  
+172        Rural          N  
+173    Semiurban          Y  
+174    Semiurban          N  
+175        Rural          Y  
+176        Rural          Y  
+177    Semiurban          N  
+178    Semiurban          Y  
+179        Urban          N  
+180        Urban          N  
+181        Rural          N  
+182    Semiurban          Y  
+183    Semiurban          N  
+184    Semiurban          Y  
+185    Semiurban          Y  
+186        Rural          N  
+187        Rural          Y  
+188        Rural          Y  
+189        Rural          Y  
+190        Rural          Y  
+191    Semiurban          N  
+192        Urban          N  
+193    Semiurban          Y  
+194        Rural          Y  
+195    Semiurban          N  
+196        Rural          Y  
+197        Urban          Y  
+198    Semiurban          Y  
+199        Urban          N  
+200    Semiurban          Y  
+201    Semiurban          Y  
+203        Urban          Y  
+204    Semiurban          Y  
+205    Semiurban          Y  
+206        Urban          Y  
+207        Rural          Y  
+208        Urban          Y  
+209    Semiurban          N  
+210    Semiurban          N  
+211    Semiurban          N  
+212        Urban          Y  
+213        Rural          Y  
+214        Urban          Y  
+215    Semiurban          Y  
+216        Rural          N  
+217    Semiurban          Y  
+218    Semiurban          N  
+219    Semiurban          Y  
+220        Urban          N  
+221    Semiurban          Y  
+222    Semiurban          Y  
+223    Semiurban          Y  
+224    Semiurban          Y  
+225        Rural          N  
+226        Urban          N  
+227    Semiurban          Y  
+228    Semiurban          Y  
+229        Rural          Y  
+230    Semiurban          Y  
+231        Rural          Y  
+232        Rural          Y  
+233    Semiurban          Y  
+234    Semiurban          Y  
+235        Rural          Y  
+236        Urban          N  
+237        Urban          Y  
+238        Rural          Y  
+239    Semiurban          Y  
+240        Rural          Y  
+241        Urban          N  
+242        Urban          Y  
+243        Rural          Y  
+244    Semiurban          Y  
+245        Urban          N  
+246        Urban          Y  
+247        Urban          Y  
+248    Semiurban          Y  
+249        Urban          Y  
+250    Semiurban          N  
+251        Urban          N  
+252        Rural          Y  
+253    Semiurban          Y  
+254        Urban          N  
+255        Rural          Y  
+256        Rural          N  
+257        Urban          N  
+258        Rural          N  
+259    Semiurban          N  
+260        Urban          Y  
+261    Semiurban          Y  
+262    Semiurban          N  
+263        Rural          Y  
+264    Semiurban          Y  
+265        Rural          Y  
+266    Semiurban          Y  
+267        Urban          Y  
+268        Rural          N  
+269        Urban          Y  
+270        Urban          Y  
+271        Urban          Y  
+272        Rural          Y  
+273    Semiurban          Y  
+274    Semiurban          Y  
+275    Semiurban          Y  
+276    Semiurban          Y  
+277        Urban          Y  
+278    Semiurban          Y  
+279        Rural          Y  
+280        Urban          N  
+281    Semiurban          Y  
+282        Urban          Y  
+283        Urban          Y  
+285        Rural          Y  
+286    Semiurban          N  
+287        Rural          Y  
+288    Semiurban          Y  
+289        Rural          Y  
+290        Rural          Y  
+291    Semiurban          N  
+292        Urban          Y  
+293        Urban          N  
+294    Semiurban          Y  
+295        Urban          Y  
+296    Semiurban          Y  
+297        Urban          Y  
+298        Rural          N  
+299        Urban          N  
+300        Urban          N  
+301    Semiurban          Y  
+302        Rural          Y  
+303        Urban          Y  
+304        Rural          Y  
+306        Rural          Y  
+307        Urban          N  
+308        Rural          N  
+309        Rural          Y  
+310    Semiurban          Y  
+311    Semiurban          Y  
+312        Rural          Y  
+313        Rural          Y  
+314        Rural          N  
+315        Urban          Y  
+316    Semiurban          Y  
+317        Urban          Y  
+318    Semiurban          Y  
+319        Rural          N  
+320    Semiurban          Y  
+321    Semiurban          Y  
+323        Rural          Y  
+324        Rural          Y  
+325        Rural          N  
+326        Rural          Y  
+327    Semiurban          Y  
+328        Urban          N  
+329        Urban          Y  
+330        Urban          Y  
+331    Semiurban          Y  
+332        Urban          Y  
+333        Urban          Y  
+334        Urban          Y  
+335    Semiurban          Y  
+336        Rural          Y  
+337        Rural          Y  
+339    Semiurban          Y  
+340        Rural          N  
+341        Rural          N  
+342        Urban          Y  
+343    Semiurban          Y  
+344        Rural          Y  
+345    Semiurban          Y  
+346        Rural          N  
+347        Urban          Y  
+348    Semiurban          Y  
+349        Rural          Y  
+350    Semiurban          Y  
+351        Rural          N  
+352        Rural          Y  
+353        Rural          N  
+354    Semiurban          Y  
+355        Urban          Y  
+356        Rural          Y  
+357        Urban          N  
+358        Urban          N  
+359    Semiurban          Y  
+360    Semiurban          N  
+361    Semiurban          Y  
+362        Urban          Y  
+363        Urban          Y  
+364        Rural          Y  
+365        Rural          N  
+366    Semiurban          N  
+367        Rural          N  
+368    Semiurban          Y  
+369        Rural          N  
+370    Semiurban          Y  
+371    Semiurban          Y  
+372        Rural          Y  
+373        Urban          N  
+374        Urban          Y  
+375        Urban          Y  
+376        Rural          Y  
+377    Semiurban          Y  
+378        Urban          N  
+379        Urban          Y  
+380    Semiurban          Y  
+381    Semiurban          Y  
+382        Urban          Y  
+383        Urban          Y  
+384        Urban          N  
+385        Urban          Y  
+386    Semiurban          Y  
+388        Urban          Y  
+389        Rural          Y  
+390        Rural          Y  
+391        Rural          Y  
+392        Urban          Y  
+393    Semiurban          Y  
+394        Urban          Y  
+395    Semiurban          Y  
+396        Urban          N  
+397        Urban          Y  
+398        Rural          Y  
+399    Semiurban          N  
+400        Urban          N  
+401        Rural          N  
+402    Semiurban          Y  
+403    Semiurban          Y  
+404        Rural          N  
+405    Semiurban          Y  
+406        Urban          Y  
+407        Rural          Y  
+408    Semiurban          N  
+409        Rural          N  
+410    Semiurban          N  
+411        Urban          Y  
+412        Rural          N  
+413        Rural          Y  
+414    Semiurban          N  
+415        Urban          Y  
+416        Urban          N  
+417        Urban          N  
+418        Rural          Y  
+419    Semiurban          Y  
+420        Rural          Y  
+421        Urban          N  
+422        Urban          Y  
+423        Urban          N  
+424    Semiurban          Y  
+425        Rural          Y  
+426        Rural          N  
+427    Semiurban          Y  
+428        Rural          Y  
+429        Urban          Y  
+430    Semiurban          Y  
+431        Rural          N  
+432    Semiurban          Y  
+433    Semiurban          Y  
+434        Urban          Y  
+436    Semiurban          Y  
+438        Urban          N  
+439        Rural          Y  
+440    Semiurban          Y  
+441        Rural          Y  
+442    Semiurban          Y  
+443    Semiurban          Y  
+444        Rural          Y  
+445        Rural          Y  
+446        Rural          Y  
+447        Rural          N  
+448        Rural          N  
+449    Semiurban          N  
+450        Rural          N  
+451        Urban          Y  
+452        Rural          N  
+453        Rural          Y  
+454    Semiurban          Y  
+455    Semiurban          Y  
+456        Urban          Y  
+457        Urban          N  
+458        Rural          Y  
+459    Semiurban          N  
+460    Semiurban          Y  
+461        Urban          Y  
+462        Rural          Y  
+463    Semiurban          Y  
+464    Semiurban          N  
+465        Rural          Y  
+466        Urban          N  
+467    Semiurban          Y  
+468    Semiurban          Y  
+469        Urban          N  
+470    Semiurban          Y  
+471        Rural          N  
+472    Semiurban          Y  
+473        Urban          Y  
+474        Rural          Y  
+475        Rural          Y  
+476    Semiurban          Y  
+477    Semiurban          N  
+478    Semiurban          Y  
+480        Rural          Y  
+481        Rural          Y  
+482    Semiurban          Y  
+483    Semiurban          Y  
+484    Semiurban          Y  
+485        Rural          Y  
+486        Rural          N  
+487        Urban          N  
+488    Semiurban          Y  
+489        Urban          N  
+490    Semiurban          Y  
+491        Urban          Y  
+492        Rural          Y  
+493    Semiurban          Y  
+494        Rural          N  
+495    Semiurban          Y  
+496        Rural          Y  
+497        Urban          Y  
+498    Semiurban          Y  
+499        Rural          N  
+500        Rural          Y  
+501    Semiurban          Y  
+502    Semiurban          Y  
+503        Rural          N  
+504    Semiurban          Y  
+505        Rural          Y  
+506        Urban          Y  
+507        Urban          N  
+508        Urban          Y  
+509        Urban          Y  
+510        Rural          N  
+511    Semiurban          Y  
+512        Urban          Y  
+513    Semiurban          N  
+514        Rural          N  
+515        Rural          Y  
+516    Semiurban          Y  
+517    Semiurban          N  
+518    Semiurban          N  
+519        Rural          N  
+520    Semiurban          Y  
+521    Semiurban          Y  
+522        Rural          Y  
+523        Rural          Y  
+525        Rural          Y  
+526    Semiurban          Y  
+527    Semiurban          Y  
+528    Semiurban          Y  
+529    Semiurban          Y  
+530        Rural          Y  
+531        Urban          Y  
+532        Rural          N  
+533    Semiurban          N  
+534        Urban          Y  
+535        Rural          Y  
+536        Urban          Y  
+537    Semiurban          Y  
+538        Rural          N  
+539        Rural          Y  
+540    Semiurban          Y  
+541    Semiurban          N  
+542    Semiurban          Y  
+543        Urban          Y  
+544    Semiurban          Y  
+545        Rural          Y  
+546    Semiurban          N  
+547        Rural          Y  
+548    Semiurban          N  
+549        Rural          Y  
+552        Urban          Y  
+553        Urban          N  
+554        Rural          N  
+555    Semiurban          Y  
+556        Urban          Y  
+557    Semiurban          Y  
+558    Semiurban          Y  
+559    Semiurban          Y  
+560    Semiurban          Y  
+561    Semiurban          Y  
+562        Rural          Y  
+563    Semiurban          Y  
+564        Urban          N  
+565        Rural          Y  
+566        Urban          Y  
+567        Rural          N  
+568        Urban          N  
+569        Urban          N  
+570        Urban          Y  
+571        Urban          N  
+572        Urban          Y  
+573    Semiurban          N  
+574    Semiurban          N  
+575        Urban          Y  
+576    Semiurban          N  
+577        Urban          Y  
+578        Rural          Y  
+579        Urban          Y  
+580    Semiurban          Y  
+581        Urban          N  
+582    Semiurban          Y  
+583        Rural          N  
+584        Rural          N  
+585        Rural          N  
+586        Urban          Y  
+587    Semiurban          Y  
+588    Semiurban          Y  
+589    Semiurban          N  
+590    Semiurban          Y  
+591    Semiurban          N  
+592    Semiurban          Y  
+593        Rural          Y  
+594        Urban          Y  
+595        Rural          Y  
+596        Rural          N  
+597    Semiurban          N  
+598        Rural          Y  
+599        Urban          Y  
+600        Urban          N  
+601        Rural          Y  
+602        Urban          Y  
+603        Rural          Y  
+604    Semiurban          Y  
+606    Semiurban          Y  
+607        Rural          Y  
+608        Rural          Y  
+609        Rural          Y  
+610        Rural          Y  
+611        Urban          Y  
+612        Urban          Y  
+613    Semiurban          N  
