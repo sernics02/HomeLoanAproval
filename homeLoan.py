@@ -57,19 +57,19 @@ def deleteValues(df, variable, minValue):
   dfFiltered = pd.read_csv('homeLoanAproval3.csv')
   return dfFiltered
 
-def kMeans(df):
+def kMeans(df, clusters = 2):
   # Select the features for clustering
   features = ['ApplicantIncome', 'LoanAmount']
   
   # Perform K-means clustering
-  kmeans = KMeans(n_clusters=2)
+  kmeans = KMeans(n_clusters=clusters)
   kmeans.fit(df[features])
   
   # Add the cluster labels to the DataFrame
   df['Cluster'] = kmeans.labels_
   
   # Print the cluster centers
-  print(kmeans.cluster_centers_)
+  # print(kmeans.cluster_centers_)
   
   # Plot the clusters
   sns.scatterplot(data=df, x='ApplicantIncome', y='LoanAmount', hue='Cluster')
@@ -97,7 +97,7 @@ def main():
   df2 = deleteValues(df2, 'ApplicantIncome', 30000)
   df2 = deleteValues(df2, 'LoanAmount', 500)  
   
-  kMeans(df2);
+  kMeans(df2, 5);
 
 if __name__ == "__main__":
   main()
