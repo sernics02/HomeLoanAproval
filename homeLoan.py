@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.cluster import KMeans
+import numpy as np
 
 VARIABLES = ['Loan_ID','Gender','Married','Dependents','Education','SelfEmployed', 'ApplicantIncome','CoapplicantIncome','LoanAmount','LoanAmountTerm','PropertyArea','LoanStatus']
 
@@ -19,9 +21,17 @@ def removeNullValues(df, variable):
   df = pd.read_csv('homeLoanAproval2.csv')
   return df
 
-def printHistPlot(df, variable):
-  sns.histplot(df[variable])
-  plt.show()
+# Funcion para imprimir el histograma
+def printHistPlot(df):
+  for variable in VARIABLES:
+    sns.histplot(df[variable])
+    plt.show()
+
+# Funcion para imprimir el blotpot
+def printBoxPlot(df):
+  for variable in VARIABLES:
+    sns.boxplot(df[variable])
+    plt.show()
 
 # Inferir valores nulos a traves de la media
 def infiere_null_values_mean(dataframe, variable):
@@ -40,17 +50,30 @@ def infiere_null_values_mode(dataframe, variable):
   dataframe[variable] = dataframe[variable].fillna(dataframe[variable].mode()[0])
   return dataframe
 
-# Funcion para imprimir el blotpot
-def printBoxPlot(df, variable):
-  sns.boxplot(df[variable])
-  plt.show()
-
 def deleteValues(df, variable, minValue):
   dfFiltered = df.loc[df[variable] <= minValue]
   # Guardar el archivo
   dfFiltered.to_csv('homeLoanAproval3.csv', index=False)
   dfFiltered = pd.read_csv('homeLoanAproval3.csv')
   return dfFiltered
+
+def kMeans(df):
+  # Select the features for clustering
+  features = ['ApplicantIncome', 'LoanAmount']
+  
+  # Perform K-means clustering
+  kmeans = KMeans(n_clusters=2)
+  kmeans.fit(df[features])
+  
+  # Add the cluster labels to the DataFrame
+  df['Cluster'] = kmeans.labels_
+  
+  # Print the cluster centers
+  print(kmeans.cluster_centers_)
+  
+  # Plot the clusters
+  sns.scatterplot(data=df, x='ApplicantIncome', y='LoanAmount', hue='Cluster')
+  plt.show()
 
 # main
 def main():
@@ -74,8 +97,7 @@ def main():
   df2 = deleteValues(df2, 'ApplicantIncome', 30000)
   df2 = deleteValues(df2, 'LoanAmount', 500)  
   
-  for variable in VARIABLES:
-    printHistPlot(df2, variable)
+  kMeans(df2);
 
 if __name__ == "__main__":
   main()
