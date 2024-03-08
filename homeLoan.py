@@ -2,7 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
-import numpy as np
+
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score
 
 VARIABLES = ['Loan_ID','Gender','Married','Dependents','Education','SelfEmployed', 'ApplicantIncome','CoapplicantIncome','LoanAmount','LoanAmountTerm','PropertyArea','LoanStatus']
 
@@ -57,7 +60,7 @@ def deleteValues(df, variable, minValue):
   dfFiltered = pd.read_csv('homeLoanAproval3.csv')
   return dfFiltered
 
-def kMeans(df, clusters = 2):
+def executeKMeans(df, clusters = 2):
   # Select the features for clustering
   features = ['ApplicantIncome', 'LoanAmount']
   
@@ -74,6 +77,45 @@ def kMeans(df, clusters = 2):
   # Plot the clusters
   sns.scatterplot(data=df, x='ApplicantIncome', y='LoanAmount', hue='Cluster')
   plt.show()
+
+def preprocessing(df):
+  pass
+
+def oneHotEncodingDF(df):
+  columns = ('Gender', 'Married', 'Education', 'SelfEmployed', 'PropertyArea', 'LoanStatus')
+
+  dfEncoded = df.copy()
+
+  for column in columns:
+    oneHotEncoded = pd.get_dummies(dfEncoded[column], prefix=column, drop_first=True)
+
+    dfEncoded = pd.concat([dfEncoded, oneHotEncoded], axis=1)
+
+    dfEncoded.drop([column], axis=1, inplace=True)
+  
+  return dfEncoded
+
+def inferValuesByGroup(df):
+  values = ['Gender', 'Married', 'SelfEmployed', 'Education', 'LoanAmountTerm', 'Dependents', 'LoanAmount']
+
+  # Inferir todos los valores anteriores dividiendolos por grupos y usando la moda
+  for variable in values:
+    df[variable] = df.groupby('PropertyArea')[variable].apply(lambda x: x.fillna(x.mode()[0]))
+  
+  return df
+
+def naiveBayes(df):
+  if 'Loan_ID' in df.columns:
+    dataframe = df.drop('Loan_ID', axis=1, inplace=True)
+
+  x = df.drop('LoanStatus_Y', axis=1)
+  y = df['LoanStatus_Y']
+  x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
+  model = GaussianNB()
+  model.fit(x_train, y_train)
+
+  y_pred = model.predict(x_test)
+  print(accuracy_score(y_test, y_pred))
 
 # main
 def main():
@@ -96,8 +138,15 @@ def main():
 
   df2 = deleteValues(df2, 'ApplicantIncome', 30000)
   df2 = deleteValues(df2, 'LoanAmount', 500)  
-  
-  kMeans(df2, 5);
+
+  # df2 = preprocessing(df2)
+
+  df2 = oneHotEncodingDF(df2)
+  # Guardar en un csv
+  df2.to_csv('homeLoanAproval4.csv', index=False)
+
+  # executeKMeans(df2, 5)
+  naiveBayes(df2)
 
 if __name__ == "__main__":
   main()
