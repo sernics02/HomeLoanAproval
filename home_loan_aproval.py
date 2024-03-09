@@ -40,8 +40,24 @@ def show_histplots(df):
   sns.histplot(df['CoapplicantIncome'], bins=20, ax=axes[1])
   sns.histplot(df['LoanAmount'], bins=20, ax=axes[2])
   plt.show()
-def preprocess(dataframe):
-  pass 
+
+def preprocess(archivo_csv):
+  dataframe = pd.read_csv(archivo_csv)
+  dataframe = one_hot_encoder(dataframe) # Convertir todos los valores categóricos en valores enteros
+
+  dataframe = drop_outliers(dataframe, 'ApplicantIncome', max_value = 3000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
+  dataframe = drop_outliers(dataframe, 'LoanAmount', max_value = 350) # Eliminar los valores atípicos de la columna 'LoanAmount'
+  dataframe = drop_outliers(dataframe, 'CoapplicantIncome', max_value = 3000, min_value = 10) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
+  
+  X = dataframe.values
+  dataframe.to_csv('homeLoanAproval1.csv', index=False)
+  # print(X)
+  labels, centroids, X_hat = k_means(X, n_clusters=4, max_iter=10) # Imputar los valores faltantes utilizando K-Means
+  # read_info(dataframe)
+  dataframe.to_csv('homeLoanAproval1.csv', index=False) 
+  dataframe = pd.DataFrame(X_hat, columns=dataframe.columns)
+  dataframe.to_csv('homeLoanAproval1.csv', index=False)
+  return dataframe
 
 def one_hot_encoder(dataframe):
     columns_to_encode = ('Gender', 'Married', 'Education', 'SelfEmployed', 'PropertyArea', 'LoanStatus')
@@ -177,28 +193,12 @@ def buildKNNeighbors(csv_path, target_column, k = 5):
 def main():
 
   archivo_csv = 'homeLoanAproval.csv'
+  dataframe = preprocess(archivo_csv)
 
-  dataframe = pd.read_csv(archivo_csv)
-  dataframe = one_hot_encoder(dataframe) # Convertir todos los valores categóricos en valores enteros
-#
-  dataframe = drop_outliers(dataframe, 'ApplicantIncome', max_value = 3000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
-  dataframe = drop_outliers(dataframe, 'LoanAmount', max_value = 350) # Eliminar los valores atípicos de la columna 'LoanAmount'
-  dataframe = drop_outliers(dataframe, 'CoapplicantIncome', max_value = 3000, min_value = 10) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
   
-  X = dataframe.values
-  dataframe.to_csv('homeLoanAproval1.csv', index=False)
-  # print(X)
-  labels, centroids, X_hat = k_means(X, n_clusters=4, max_iter=10) # Imputar los valores faltantes utilizando K-Means
-  # read_info(dataframe)
-  dataframe.to_csv('homeLoanAproval1.csv', index=False) 
-  dataframe = pd.DataFrame(X_hat, columns=dataframe.columns)
-  dataframe.to_csv('homeLoanAproval1.csv', index=False)
   naive_bayes(dataframe)
-  buildClassificatonTree('homeLoanAproval1.csv', 'LoanStatus_Y')
+  # buildClassificatonTree('homeLoanAproval1.csv', 'LoanStatus_Y')
   buildKNNeighbors('homeLoanAproval1.csv', 'LoanStatus_Y')
 
 if __name__ == "__main__":
   main()
-
-
-
