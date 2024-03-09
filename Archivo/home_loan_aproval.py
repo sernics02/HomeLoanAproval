@@ -70,19 +70,6 @@ def one_hot_encoder(dataframe):
 
 
 def k_means(X, n_clusters, max_iter=10):
-    """Perform K-Means clustering on data with missing values.
-
-    Args:
-      X: An [n_samples, n_features] array of data to cluster.
-      n_clusters: Number of clusters to form.
-      max_iter: Maximum number of EM iterations to perform.
-
-    Returns:
-      labels: An [n_samples] vector of integer labels.
-      centroids: An [n_clusters, n_features] array of cluster centroids.
-      X_hat: Copy of X with the missing values filled in.
-    """
-
     # Initialize missing values to their column means
     missing = np.isnan(X)
     mu = np.nanmean(X, 0, keepdims=1)
@@ -133,11 +120,11 @@ def naive_bayes(df):
 
   # Evaluar el rendimiento del clasificador
   accuracy = accuracy_score(y_test, y_pred)
-  print("\n\n\nNAIVE BAYES CLASSIFIER\n\n\n")
+  print("NAIVE BAYES CLASSIFIER\n")
   print(f'Accuracy: {accuracy:.2f}')
 
   # Mostrar el informe de clasificación
-  print('\nClassification Report:\n', classification_report(y_test, y_pred))
+  # print('\nClassification Report:\n', classification_report(y_test, y_pred))
 
 ## main
 def main():
@@ -147,19 +134,19 @@ def main():
   dataframe = pd.read_csv(archivo_csv)
   dataframe = one_hot_encoder(dataframe) # Convertir todos los valores categóricos en valores enteros
 #
-  dataframe = drop_outilers(dataframe, 'ApplicantIncome', 30000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
+  dataframe = drop_outilers(dataframe, 'ApplicantIncome', 3000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
   dataframe = drop_outilers(dataframe, 'LoanAmount', 700) # Eliminar los valores atípicos de la columna 'LoanAmount'
   dataframe = drop_outilers(dataframe, 'CoapplicantIncome', 1000000) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
   
 
   X = dataframe.values
-  dataframe.to_csv('homeLoanAproval3.csv', index=False)
-  print(X)
+  dataframe.to_csv('homeLoanAproval1.csv', index=False)
+  # print(X)
   labels, centroids, X_hat = k_means(X, n_clusters=4, max_iter=10) # Imputar los valores faltantes utilizando K-Means
-  read_info(dataframe)
-  dataframe.to_csv('homeLoanAproval3.csv', index=False) 
+  # read_info(dataframe)
+  dataframe.to_csv('homeLoanAproval1.csv', index=False) 
   dataframe = pd.DataFrame(X_hat, columns=dataframe.columns)
-  dataframe.to_csv('homeLoanAproval3.csv', index=False)
+  dataframe.to_csv('homeLoanAproval1.csv', index=False)
   naive_bayes(dataframe)
 
 
