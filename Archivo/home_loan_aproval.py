@@ -191,7 +191,7 @@ def main():
   dataframe = one_hot_encoder(dataframe) # Convertir todos los valores categóricos en valores enteros
 #
   dataframe = drop_outliers(dataframe, 'ApplicantIncome', max_value = 3000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
-  dataframe = drop_outliers(dataframe, 'LoanAmount', max_value = 400) # Eliminar los valores atípicos de la columna 'LoanAmount'
+  dataframe = drop_outliers(dataframe, 'LoanAmount', max_value = 350) # Eliminar los valores atípicos de la columna 'LoanAmount'
   dataframe = drop_outliers(dataframe, 'CoapplicantIncome', max_value = 3000, min_value = 10) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
   
   X = dataframe.values
