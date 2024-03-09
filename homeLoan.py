@@ -76,6 +76,12 @@ def executeKMeans(df, clusters = 2):
   
   # Plot the clusters
   sns.scatterplot(data=df, x='ApplicantIncome', y='LoanAmount', hue='Cluster')
+
+  # Guardar cada cluster en un csv
+  for i in range(clusters):
+    dfCluster = df.loc[df['Cluster'] == i]
+    dfCluster.to_csv(f'cluster{i}.csv', index=False)
+
   plt.show()
 
 def preprocessing(df):
@@ -145,7 +151,7 @@ def main():
   # Guardar en un csv
   df2.to_csv('homeLoanAproval4.csv', index=False)
 
-  # executeKMeans(df2, 5)
+  executeKMeans(df2, 4)
   naiveBayes(df2)
 
 if __name__ == "__main__":
