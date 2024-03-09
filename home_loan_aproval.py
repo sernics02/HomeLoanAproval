@@ -3,15 +3,11 @@ import numpy as np
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import seaborn as sns
-from scipy.stats import mode
-
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
-
 
 VARIABLES = ('Gender','Married','Dependents','Education','SelfEmployed','ApplicantIncome','CoapplicantIncome','LoanAmount','LoanAmountTerm',   'PropertyArea')
 
@@ -24,13 +20,11 @@ def read_info(dataframe):
     # Estadísticas descriptivas de las variables numéricas
   print(dataframe.describe())
 
-
 def distributions(dataframe):
   # Visualización de distribución de variables numéricas
   for variable in VARIABLES:
     sns.histplot(dataframe[variable], bins=20)
     plt.show()
-
 
 def drop_outliers(dataframe, variable, max_value, min_value=None):
   if min_value is not None:
@@ -39,7 +33,6 @@ def drop_outliers(dataframe, variable, max_value, min_value=None):
     new_dataframe = dataframe.loc[dataframe[variable] <= max_value]
   return new_dataframe
   
-
 def show_histplots(df):
   # Visualización de distribución de variables numéricas
   fig, axes = plt.subplots(1, 3, figsize=(18, 6), sharey=True)
@@ -49,7 +42,6 @@ def show_histplots(df):
   plt.show()
 def preprocess(dataframe):
   pass 
-
 
 def one_hot_encoder(dataframe):
     columns_to_encode = ('Gender', 'Married', 'Education', 'SelfEmployed', 'PropertyArea', 'LoanStatus')
@@ -70,7 +62,6 @@ def one_hot_encoder(dataframe):
         df_encoded.drop([column], axis=1, inplace=True)
 
     return df_encoded
-
 
 def k_means(X, n_clusters, max_iter=10):
     # Initialize missing values to their column means
