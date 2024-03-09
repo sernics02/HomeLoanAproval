@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import mode
 
-
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
@@ -47,6 +45,7 @@ def show_histplots(df):
   plt.show()
 def preprocess(dataframe):
   pass 
+
 
 def one_hot_encoder(dataframe):
     columns_to_encode = ('Gender', 'Married', 'Education', 'SelfEmployed', 'PropertyArea', 'LoanStatus')
@@ -135,10 +134,9 @@ def main():
   dataframe = one_hot_encoder(dataframe) # Convertir todos los valores categóricos en valores enteros
 #
   dataframe = drop_outilers(dataframe, 'ApplicantIncome', 3000) # Eliminar los valores atípicos de la columna 'ApplicantIncome'
-  dataframe = drop_outilers(dataframe, 'LoanAmount', 700) # Eliminar los valores atípicos de la columna 'LoanAmount'
-  dataframe = drop_outilers(dataframe, 'CoapplicantIncome', 1000000) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
+  dataframe = drop_outilers(dataframe, 'LoanAmount', 350) # Eliminar los valores atípicos de la columna 'LoanAmount'
+  dataframe = drop_outilers(dataframe, 'CoapplicantIncome', 100000) # Eliminar los valores atípicos de la columna 'CoapplicantIncome'
   
-
   X = dataframe.values
   dataframe.to_csv('homeLoanAproval1.csv', index=False)
   # print(X)
